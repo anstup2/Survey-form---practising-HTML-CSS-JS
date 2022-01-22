@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survey Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+  <p id="description"><em>
+    Please take a moment to fill out the survey below.</em></p>
+  <form id="survey-form" onsubmit="submitAction()" method="post" required>
+    <fieldset>
+      <label id="name-label"><strong>Name: </strong></label><input id="name" type="text" name="Name" placeholder="Please enter your name" required/></label>
+    </fieldset>
+  <hr>
+<fieldset>
+  <label id="email-label"><strong>Email: </strong><input id="email" type="email" name="Email" placeholder="Please provide your email" required/></label>
+  </fieldset>
+  <hr>
+<fieldset>
+  <label id="number-label"><strong>Age: </strong><input id="number" type="number" name="Age" min="18" max="115" placeholder="Age"/></label>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <label><strong>What is your area of expertise ?</strong>
+      <p>
+  <select id="dropdown">
+    <option>Select one
+    </option>
+    <option value="1">Information Technology
+    </option>
+    <option value="2">Telecommunications
+    </option>
+    <option value="3">Medical Sciences
+    </option>
+    <option value="4">Research/ Sciences
+    </option>
+    <option value="5">Finances
+    </option>
+    <option value="6">Architecture
+    </option>
+     <option value="7">Arts
+    </option>
+     <option value="8">Other
+    </option>
+  </select>
+      </p> 
+    </label>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <label><strong>What are your favourite activities ? </strong></label>
+     <p>
+       <label><input type="radio" name="activities" id="radio" value="sports"/>Active Sports/Cardio</label>
+    <label><input type="radio" name="activities" id="radio" value="artistic"/>Concerts/Theater</label>
+    <label><input type="radio" name="activities" id="radio" value="outdoors"/>Nature hiking/Travelling</label>
+    <label><input type="radio" name="activities" id="radio" value="relaxation"/>Spa/Yoga/Relaxing</label>
+    <label><input type="radio" name="activities" id="radio" value="family"/>Enjoying family time</label>
+    <label><input type="radio" name="activities" id="radio" value="growth"/>Studying something new</label>
+    </p>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <label><strong>What are your favourite continents / regions for vacation planning ? </strong></label>
+    <p><img src="https://w0.peakpx.com/wallpaper/869/61/HD-wallpaper-summer-holiday-cars-dodge-golf-holidays-insignia-lancer.jpg">
+    </p>
+    </label>
+    <label><input type="checkbox" id="checkbox" name="regions" value="mediteranean"/>Europe/ Mediteranean
+  </label>
+  <label><input type="checkbox" id="checkbox" name="regions" value="europenord"/>Northern Europe 
+  </label>
+  <label><input type="checkbox" id="checkbox" name="regions" value="Africa"/>Africa 
+  </label>
+  <label><input type="checkbox" id="checkbox" name="regions" value="oceania"/>Oceania 
+  </label>
+  <label><input type="checkbox" id="checkbox" name="regions" value="carribean"/>Carribean
+  </label>
+  <label><input type="checkbox" id="checkbox" name="regions" value="asia"/>Asia
+    <label><input type="checkbox" id="checkbox" name="regions" value="us"/>United States
+  </label>
+    <label><input type="checkbox" id="checkbox" name="regions" value="canada"/>Canada
+  </label>
+    </p>
+  </fieldset>
+  <hr>
+<fieldset>
+    <label><strong>What are your favourite places to visit ? </strong></label>
+    <p>
+    <label><input type="checkbox" id="checkbox" name="sea" value="seaside"/>Seaside 
+  </label>
+  <label><input type="checkbox" id="checkbox" name="mountain" value="highlands"/>Mountain 
+  </label>
+  <label><input type="checkbox" id="checkbox" name="all" value="both"/>Beaches with mountain views 
+  </label>
+  <label><input type="checkbox" id="checkbox" name="or" value="other"/>As long as it's holiday I have no preferrence 
+  </label>
+  </p>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <label id="photosection"><strong>Favorite vacation photo: </strong>
+      <p>
+      <input type="file" />
+      </p>
+    </label>
+  </fieldset>
+  </hr>
+<fieldset>
+  <label><em>Would you like to receive our vacation packages via email ?</em>
+  </label>
+  <label><input type="radio" name="confirmation" id="radio" value="yes"/>Yes</label>
+  <label><input type="radio" name="confirmation" id="radio" value="no"/>No</label>
+</fieldset>
+    <fieldset>
+  <textarea placeholder="Please provide any additional comments or feedback"></textarea>
+      <input type="submit" id="submit" value="Submit";/>
+    </fieldset>
+  </form>
+<script src="./myscript.js">
+</script>
+</body>
+<footer><em>Don't forget to checkout <a href="https://www.freecodecamp.org" target="_blank">our website</a></em>
+</footer>
+</html>
